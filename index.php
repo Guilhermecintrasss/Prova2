@@ -11,6 +11,7 @@
         <li><a href="cadastro_fluxo_caixa.html">Cadastro do Fluxo dos Caixas</a></li>
         <li><a href="listar_fluxo_caixa.php">Listar Fluxo dos Caixas</a></li>
         <li><a href="excluir_agenda.php">Excluir Fluxo dos Caixas</a></li>
+        <li><a href="consulta_fluxo_caixa.html">Consulta dos fluxos do caixa</a></li>
     </ul>
 </body>
 </html>

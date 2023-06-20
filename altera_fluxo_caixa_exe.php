@@ -6,7 +6,7 @@
     $tipo = $_POST['tipo'];
     $valor = $_POST['valor'];
     $hist = $_POST['hist'];
-    $cheque = $_POST['ceque'];
+    $cheque = $_POST['cheque'];
 
     echo "<h1>Alteração de dados</h1>"; //Campos do tipo Varchar sempre tem aspas simples
 

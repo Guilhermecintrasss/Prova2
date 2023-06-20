@@ -1,6 +1,6 @@
 <?php 
         include('conexao.php');
-        $id_agenda = $_GET['id'];//pega o valor do id_usuario para usar como parametro no update
+        $id = $_GET['id'];//pega o valor do id_usuario para usar como parametro no update
         $sql = "SELECT * FROM fluxo_caixa where id=$id";
         $result = mysqli_query($con,$sql);
         $row = mysqli_fetch_array($result);
@@ -14,8 +14,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Cadastro de Agendamentos - MEDVET</h1>
-    <form action="altera_agenda_exe.php" method="post">
+    <h1>Alteração de Cadastro dos Fluxo de Bancos</h1>
+    <form action="altera_fluxo_caixa_exe.php" method="post">
         <input name="id" type="hidden" 
         value="<?php echo $row['id']?>">
         <div>
@@ -25,8 +25,10 @@
         </div>
         <div>
             <label for="tipo">Tipo: </label>
-            <input type="text" name="tipo" id="tipo" 
-            value="<?php echo $row['tipo']?>">
+            <label for="tipo">entrada</label>
+            <input type="radio" name="tipo" value="entrada" id="tipo" <?php if($row['tipo'] == 'entrada'){echo "checked";}?>>
+            <label for="tipo">saida</label>
+            <input type="radio" name="tipo" value="saida" id="tipo" <?php if($row['tipo'] == 'saida'){echo "checked";}?>>
         </div>
         <div>
             <label for="valor">Valor: </label>
