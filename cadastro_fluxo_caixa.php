@@ -26,4 +26,5 @@ else{
     echo "Erro ao tentar cadastrar!";}
 
 $result = mysqli_query($con, $sql);
+echo "<a href='index.php'>Voltar</a>";
 ?>
