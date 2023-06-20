@@ -13,7 +13,7 @@
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_array($result);
     ?>
-    <h1>Lista de Agendamentos</h1> 
+    <h1>Lista de Fluxos de Caixas</h1> 
     <table align="center" border="1" width="500">
         <tr> Cabeçalho
             <th>ID</th>
@@ -29,10 +29,9 @@
             echo "<td>".$row['data']."</td>";
             echo "<td>".$row['tipo']."</td>";
             echo "<td>".$row['valor']."</td>";
-            echo "<td>".$row['historico']."</td>";
+            echo "<td>
+            <a href='altera_fluxo_caixa.php?id=".$row['id']."'>".$row['historico']."</a></td>";
             echo "<td>".$row['cheque']."</td>";
-            echo "<td><a href='altera_fluxo_caixa.php?id="
-            .$row['id']."'> Alterar </a> </td>"; //vai pegar o valor do id exibido 
             echo "<td><a 
             href='excluir_fluxo_caixa.php?id=".$row['id']."'>Excluir</a>
             </td>";
