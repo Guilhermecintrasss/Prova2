@@ -1,5 +1,5 @@
 <?php 
-include('conexao.php');
+include("conexao.php");
 $id = $_GET['id']; //Aqui é get, já que passa pela URL
 $sql = "DELETE from fluxo_caixa WHERE id=$id";
 

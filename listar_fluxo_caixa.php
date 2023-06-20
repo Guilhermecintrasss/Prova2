@@ -15,7 +15,7 @@
     ?>
     <h1>Lista de Fluxos de Caixas</h1> 
     <table align="center" border="1" width="500">
-        <tr> Cabeçalho
+        <tr>
             <th>ID</th>
             <th>DATA</th>
             <th>TIPO</th>
